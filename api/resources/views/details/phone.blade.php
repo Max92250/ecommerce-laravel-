@@ -3,14 +3,18 @@
 
 
 @section('section1')
-    <div class="body">
+   
+<div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
     
         @foreach ($products as $product)
-        <div class="product-card">
-       
-            <a href="{{ route('products.show', ['id' => $product['id']]) }}">
+        <div class="col-lg-3 col-md-6 pb-1">
+
+                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 @if(isset($product['images'][0]))
-                    <img class="img-flid" src="{{ $product['images'][0] }}" alt="{{ $product['title'] }}">
+                <a href="{{ route('products.show', ['id' => $product['id']]) }}" class="cat-img position-relative overflow-hidden mb-3">
+                    <img class="img-fluid" src="{{ $product['images'][0] }}" alt="{{ $product['title'] }}">
+                </a>
                 @else
                     <img src="placeholder_image_url" alt="Placeholder" style="max-width: 100%;">
                 @endif
@@ -32,8 +36,10 @@
                 @else
                     <p>Price: Not Available</p>
                 @endif
-            </a>
+                </div>
+        
         </div>
     @endforeach
     </div>
+
     @endsection

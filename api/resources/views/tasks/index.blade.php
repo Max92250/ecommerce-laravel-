@@ -71,7 +71,7 @@
         <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">4 Products</p>
-                <a href="{{ route('phones'); }}"" class="cat-img position-relative overflow-hidden mb-3">
+                <a href="{{ route('phones'); }}"" class="cat-img position-relative  mb-3">
                     <img class="img-fluid" src="https://onsalesoffers.com/wp-content/uploads/2023/06/iphjon.png" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">smartphones</h5>
@@ -82,7 +82,7 @@
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">4 Products</p>
                 <a href="{{ route('laptop'); }}""  class="cat-img position-relative overflow-hidden mb-3">
-                    <img class="img-fluid" src="https://cdn.thewirecutter.com/wp-content/media/2023/06/bestlaptops-2048px-9765.jpg" alt="">
+                    <img class="img-fluid" src="https://www.shutterstock.com/image-photo/kiev-ukraine-october-13-2017-260nw-776440144.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">laptops</h5>
             </div>
@@ -91,7 +91,7 @@
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">4 Products</p>
                 <a href="{{ route('fragnance'); }}""  class="cat-img position-relative overflow-hidden mb-3">
-                    <img class="img-fluid" src="https://puls-img.chanel.com/1687527727352-parfumvisual1jpg_1150x1080.jpg" alt="">
+                    <img class="img-fluid" src="https://puls-img.chanel.com/1658828766814-8821913321502webp_819x768.webp" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">fragrances</h5>
             </div>
@@ -100,7 +100,7 @@
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">4 Products</p>
                 <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                    <img class="img-fluid" src="https://assets.teenvogue.com/photos/5dcdb2859e7c33000970e450/4:3/w_4163,h_3122,c_limit/Beauty_Soko-Glam_PROMO.jpg" alt="">
+                    <img class="img-fluid" src="https://media.allure.com/photos/654d3ac4767ebef727e25ac1/master/w_1280%2Cc_limit/chanel.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">skincare</h5>
             </div>
@@ -109,7 +109,7 @@
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">4 Products</p>
                 <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                    <img class="img-fluid" src="https://bloomingdales.ae/dw/image/v2/BDSP_PRD/on/demandware.static/-/Sites-bloomingdales-master-catalog/default/dwecdeace8/images/hi-res/BLM/Gucci/215771739/215771739_IN.jpg?sw=435&sh=650&q=100" alt="">
+                    <img class="img-fluid" src="https://a.1stdibscdn.com/chanel-vintage-white-logo-silk-mini-dress-for-sale/1121189/v_70324521566030834706/7032452_master.jpg?width=768" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">womens-dresses</h5>
             </div>
@@ -144,7 +144,7 @@
         <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
             <p class="text-right">4 Products</p>
             <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                <img class="img-fluid" src="https://cdna.lystit.com/520/650/n/photos/farfetch/9712a6d2/gucci--GG-Short-sleeved-Polo-Shirt.jpeg" alt="">
+                <img class="img-fluid" src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-inside-out-t-shirt-ready-to-wear--HIY47WJYN002_PM2_Front%20view.jpg" alt="">
             </a>
             <h5 class="font-weight-semi-bold m-0">mens-tshirt</h5>
         </div>
@@ -153,7 +153,7 @@
         <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
             <p class="text-right">4 Products</p>
             <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                <img class="img-fluid" src="https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/1341ee9a-ad54-4a22-9868-0e0a9b6fe017/women-s-air-jordan-1-low-x-travis-scott-medium-olive-dz4137-106-release-date.jpg" alt="">
+                <img class="img-fluid" src="https://cdn.allsquaregolf.com/pictures/pictures/000/170/083/large/picture_product_undefined.jpg" alt="">
             </a>
             <h5 class="font-weight-semi-bold m-0">men shoes</h5>
         </div>

@@ -87,10 +87,10 @@ a{
     </style>
 <body>
    
-    <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+    <div class="container-fluid" >
+    <nav class="navbar navbar-expand-lg bg-light  navbar-light py-3 py-lg-0 px-0" >
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="navbar-nav mr-auto py-0">
+        <div class="navbar-nav mr-auto py-0" >
             <a href="{{ route('index')}}"  class="nav-item nav-link">Home</a>
             <a href="{{ route('shop')}}" class="nav-item nav-link">Shop</a>
             <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
