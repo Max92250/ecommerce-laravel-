@@ -194,9 +194,12 @@ height: 100vh !important;
                               </div>
                             </div>
                             <div class="d-flex flex-row align-items-center">
-                              <div style="width: 50px;">
-                                <h5 class="fw-normal mb-0">${item.quantity}</h5>
-                              </div>
+                                <div class="d-flex  flex-row" style="width: 120px;">
+                                    <button class="btn btn-outline-secondary btn-sm decrement-button"data-index="${index}">-</button>
+<h5 class="fw-normal mb-0">&nbsp;${item.quantity}&nbsp;</h5>
+<button class="btn btn-outline-secondary btn-sm increment-button"data-index="${index}">+</button>
+                      
+                    </div>
                               <div style="width: 80px;">
                                 <h5 class="mb-0">${item.price}<h5>
                               </div>
@@ -235,22 +238,51 @@ cartTotal.text(total);
         // Remove the item at the specified index
         cart.splice(index, 1);
 
-        // Update local storage with the modified cart
+      
         setCartData(cart);
 
-        // Update the cart display and counter
+
         displayCartData();
         
         
     }
-    
+
+$(document).ready(function() {
+    $('.decrement-button').on('click', function() {
+        const index = $(this).data('index');
+        updateQuantity(index, -1);
+    });
+
+    $('.increment-button').on('click', function() {
+        const index = $(this).data('index');
+        updateQuantity(index, 1);
+    });
+});
+
+    function updateQuantity(index, change) {
+        console.log('Updating quantity:', index, change);
+    const cartData = getCartData();
+    const currentQuantity = cartData[index].quantity;
+    console.log('Current quantity:', currentQuantity);
+
+    const newQuantity = Math.max(1, currentQuantity + change);
+   
+    cartData[index].quantity = newQuantity;
+    cartData[index].subtotal = newQuantity * cartData[index].price;
+
+  
+    setCartData(cartData);
+
+    displayCartData();
+}
+
    
 
 
 
     }
 
-    // Call the displayCartData function when the page loads
+    
     $(document).ready(function() {
         displayCartData();
     });

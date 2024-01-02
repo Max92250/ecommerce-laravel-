@@ -12,7 +12,7 @@ class SearchController extends Controller
         // URL of the API endpoint
         $apiUrl = 'https://dummyjson.com/products/search';
 
-        // Query parameters for the search
+
         $searchQuery = $request->input('q');
 
         // Check if the search query is empty
@@ -22,6 +22,7 @@ class SearchController extends Controller
         }
 
         try {
+            
             // Send a GET request to the API
             $response = Http::get($apiUrl, ['q' => $searchQuery]);
 
@@ -30,13 +31,11 @@ class SearchController extends Controller
                 // Decode the JSON response
                 $products = json_decode($response->body(), true);
 
-                // Now you can process the $products array
-                $products = json_decode($response->body(), true);
                 return view('details.laptop',['products'=>$products['products']]);
-                $products = json_decode($response->body(), true);
+
                 return view('details.fragnance',['products'=>$products['products']]);
                 
-                $products = json_decode($response->body(), true);
+           
                 return view('tasks.product',['product'=>$products]);
                 
               

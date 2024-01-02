@@ -35,8 +35,11 @@ class LoginController extends Controller
 
 
             session([$sessionKey => [
-                'user_id' => $user->id,
+                'id' => $user->id,
                 'name' => $user->name,
+                'email' => $user->email,
+                'token' => $token,
+             
                 
             ]]);
             $users = $request->user();
@@ -58,7 +61,7 @@ class LoginController extends Controller
         // Revoke all tokens for the authenticated user
         if ($request->user()) {
             $user = $request->user();
-    
+         
             // Revoke all tokens for the authenticated user
             $user->tokens()->delete();
     

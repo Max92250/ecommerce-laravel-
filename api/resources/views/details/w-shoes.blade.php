@@ -2,8 +2,9 @@
 @extends('tasks.navs')
 
 
-@section('section1')
-   
+@section('section7')
+
+  
 <div class="container-fluid pt-5">
     <div class="row px-xl-5 pb-3">
     
@@ -36,17 +37,18 @@
                 @else
                     <p>Price: Not Available</p>
                 @endif
+                <button class="bt btn" onclick="addToCart('{{ $product['id'] }}', '{{ $product['title'] }}', '{{ $product['price'] }}','{{$product['images'][0]}}')">Add to Cart</button>
                 
-                <button class="btn bt" onclick="addToCart('{{ $product['id'] }}', '{{ $product['title'] }}', '{{ $product['price'] }}','{{$product['images'][0]}}')">Add to Cart</button>
+                
                 </div>
-                </div>
+                
         
-        
+        </div>
     @endforeach
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
  
 
-    <script src="{{asset('js/cart.js')}}"></script>
+<script src="{{asset('js/cart.js')}}"></script>
     </div>
-
     @endsection
+  

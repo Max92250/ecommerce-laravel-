@@ -9,7 +9,6 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CategoryTestController;
 
 
-// Example API route in routes/api.php
 
 
 // Register route
@@ -34,6 +33,9 @@ Route::middleware(['web', 'checklogin'])->group(function () {
     Route::get('/laptop', [TaskController::class, 'laptopdetails'])->name('laptop');
     Route::get('/shop', [TaskController::class, 'shopdetails'])->name('shop');
     Route::get('/fragnance', [TaskController::class, 'fragnancedetails'])->name('fragnance');
+    Route::get('/skincare', [TaskController::class, 'skincaredetails'])->name('skincare');
+    Route::get('/women-dress', [TaskController::class, 'dressdetails'])->name('dress');
+    Route::get('/women-shoes', [TaskController::class, 'shoesdetails'])->name('shoes');
     Route::get('/category', [CategoryTestController::class, 'filterByCategory'])
     ->name('filterByCategory');
     Route::get('/products/{id}', [TaskController::class, 'showUpdateForm'])

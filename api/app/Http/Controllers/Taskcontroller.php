@@ -62,15 +62,51 @@ class TaskController extends Controller
         return view('details.fragnance',['products'=>$products['products']]);
     
     }
+    public function skincaredetails()
+    {
+        // Retrieve all tasks
+        
+      
+        $response = Http::get('https://dummyjson.com/products/category/skincare');
+
+        // Extract products from the response
+        $products = json_decode($response->body(), true);
+        return view('details.skincare',['products'=>$products['products']]);
+    
+    }
     public function shopdetails()
+    {
+        // Retrieve all tasks
+        
+      
+        $response = Http::get('https://dummyjson.com/products/');
+
+        // Extract products from the response
+        $products = json_decode($response->body(), true);
+        return view('details.shop',['products'=>$products['products']]);
+    
+    }
+    public function dressdetails()
+    {
+        // Retrieve all tasks
+        
+      
+        $response = Http::get('https://dummyjson.com/products/category/womens-dresses');
+
+        // Extract products from the response
+        $products = json_decode($response->body(), true);
+        return view('details.w-dress',['products'=>$products['products']]);
+    
+    }
+    public function shoesdetails()
     {
         
         
       
-        $response = Http::get('https://dummyjson.com/products');
+        $response = Http::get('https://dummyjson.com/products/category/womens-shoes');
 
         $products = json_decode($response->body(), true);
-        return view('details.shop',['products'=>$products['products']]);
+        return view('details.w-shoes',['products'=>$products['products']]);
     
     }
     // Assume you have a function to get the cart items from the 

@@ -2,8 +2,7 @@
 @extends('tasks.navs')
 
 
-@section('section1')
-   
+@section('section5')
 <div class="container-fluid pt-5">
     <div class="row px-xl-5 pb-3">
     
@@ -43,10 +42,7 @@
         
         
     @endforeach
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
- 
-
-    <script src="{{asset('js/cart.js')}}"></script>
     </div>
+</div>
 
     @endsection
